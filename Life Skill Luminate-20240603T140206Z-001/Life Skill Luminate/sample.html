@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Map with Tooltip</title>
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
+</head>
+<body>
+
+<img src="images/big-store_182089-294.jpg" width="100%" usemap="#map" />
+
+<map name="map">
+    <area shape="circle" coords="309,279,20" href="#" onmouseover="display('200px','0px','0px','240px','Fruits')" onmouseout="hide()"/>
+    <area shape="circle" coords="772,137,20" href="#" onmouseover="display('10%','52%','0','40%','Meat')" onmouseout="hide()"/>
+    
+    <!-- Add more areas as needed -->
+</map>
+<div id="tooltip" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-size: medium;", >
+
+</div>
+
+<div class="rack-container">
+    <img src="images/rackbg.jpg" alt="Rack Background" class="rack-background" usemap="#map1" />
+    <map name="map1"> 
+        <area id="area1" shape="circle" coords="449,295,20" href="#" onclick="change('apple')">
+    </map>
+    <img src="images/apple-basket.jpg" id="apple" alt="Apple" class="object" width="100px" height="100px" style="top: 60px; left: 100px;" />
+    <img src="images/banana-basket.jpg" alt="Banana" class="object" width="100px" height="80px" style="top: 70px; right: 200px;" />
+    <!-- Add more objects as needed -->
+</div>
+
+
+</body>
+</html>

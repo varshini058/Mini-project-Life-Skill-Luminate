@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/android-chrome-512x512.png">
+    <title>LifeSkillLuminate | Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-quiz">
+            <ul>
+                <li id="apple"><img src="images/apple-basket.jpg"/>Apples</li>
+                <li id="banana"><img src="images/banana-basket.jpg" />Banana</li>
+                <li id="sausages"><img src="images/sausages.jpg" /> Sausages</li>
+                <li id="bread" ><img src="images/breadbasket.jpg"/> Bread</li>
+                <li id="milk"><img src="images/Milkcarton.jpg" /> Milk</li>
+            </ul>
+        </div>
+        <div class="main-content" >
+            <div class="card-container">
+                <img src="images/fruit_rack.jpg" height="50%" width="50%" usemap="#map1"/>
+                <map name="map1"> 
+                    <area id="area1" shape="circle" coords="299,125,20" href="#" onclick="change('apple')">
+                    <area id="area2" shape="circle" coords="369,127,20" href="#" onclick="change('banana')">
+                </map>
+                <img src="images/meat-items.jpg" height="50%" width="50%" usemap="#map2"/>
+                <map name="map2">
+                    <area id="area3" shape="circle" coords="90,140,20" href="#" onclick="change('sausages')">
+                </map>
+            </div>
+            <button class="btn" style="margin-top: 20px;"><a href="quiz1.html" style="text-decoration: none;">Next</a>
+        </div>
+    </div>
+    
+            <!-- <div class="slideshow-container"> -->
+
+                <!-- <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="images/fruit_rack.jpg" usemap="#map1" style="height: 100%;width: 70%;padding-top: 0;">
+                  <map name="map1"> 
+                    <area id="area1" shape="circle" coords="1159,388,20" href="#" onclick="change('apple')">
+                    </map>
+                  <div class="text">Fruits & Veggies</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="images/meat-items.jpg" style="height: 100%;width: 70%;padding-top: 0;">
+                  <div class="text">Meat Products</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="images/dairy prod rack.png" style="height: 60%;width:50%;padding-top: 0;">
+                  <div class="text">Dairy Products</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+            -->
+    <!-- <script>
+        let slideIndex = 1;
+ showSlides(slideIndex);
+ 
+ function plusSlides(n) {
+   showSlides(slideIndex += n);
+ }
+ 
+ function currentSlide(n) {
+   showSlides(slideIndex = n);
+ }
+ 
+ function showSlides(n) {
+   let i;
+   let slides = document.getElementsByClassName("mySlides");
+   let dots = document.getElementsByClassName("dot");
+   if (n > slides.length) {slideIndex = 1}    
+   if (n < 1) {slideIndex = slides.length}
+   for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";  
+   }
+   for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+   }
+   slides[slideIndex-1].style.display = "block";  
+   dots[slideIndex-1].className += " active";
+ }
+
+    </script> -->
+</body>
+</html>

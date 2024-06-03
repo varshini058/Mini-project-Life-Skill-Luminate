@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/android-chrome-512x512.png">
+    <title>LifeSkillLuminate | Module 2</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<style>
+    body{
+        background-color: #db9010;
+    }
+</style>
+<body>
+    <div class="rack-container">
+    <img src="images/Desktop - 1.png" width="100%" height="50%" usemap="#map" class="rack-background" />
+    <h1 class="object title" style="top:12px;margin-left: 30px;">Let's take a virtual tour of a <span style="font-size:40px;">GROCERY STORE !</span></h1>
+    <map name="map">
+    <area shape="rectangle" coords="32,280,126,450" href="#" id="meat" onclick="display(event)" />
+    <area shape="rectangle" coords="179,314,272,510" href="#" id="bev" onclick="display(event)"/>
+    <area shape="rectangle" coords="317,361,459,511" href="#" id="pack" onclick="display(event)"/>
+    <area shape="rectangle" coords="400,380,600,520" href="#" id="baked" onclick="display(event)"/>
+    <area shape="rectangle" coords="650,383,825,523" href="#" id="fruit" onclick="display(event)"/>
+    <area shape="rectangle" coords="901,416,1100,526" href="#" id="vege" onclick="display(event)"/>
+    <area shape="rectangle" coords="1150,200,1411,553" href="#" id="dairy" onclick="display(event)"/>
+    </map>
+    <div id="imgmeat">
+        <img src="images/green.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">MEAT</h3>
+        <p style="top:400px; left:60px" class="object green-content" id="demo_meat"></p>
+    </div>
+    <div id="imgbev">
+        <img src="images/red.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">BEVERAGES</h3>
+        <p style="top:400px; left:60px" class="object green-content" id="demo_bev"></p>
+        </div>
+    </div>
+    <div id="imgpack" >
+        <img src="images/red.png" height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">CANNED FOODS</h3>
+        <p style="top:400px; left:90px" class="object green-content" id="demo_pack"></p>
+    </div>
+    <div id="imgbaked">
+        <img src="images/green.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">BAKED ITEMS</h3>
+        <p style="top:400px; left:90px" class="object green-content" id="demo_bake"></p>
+    </div>
+    <div id="imgfruits">
+        <img src="images/green.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">FRUITS</h3>
+        <p style="top:400px; left:90px" class="object green-content" id="demo_fruit"></p>
+    </div>
+    <div id="imgveggies">
+        <img src="images/green.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">VEGETABLES</h3>
+        <p style="top:400px; left:90px" class="object green-content" id="demo_vege"></p>
+    </div>
+    <div id="imgdairy">
+        <img src="images/green.png"  height="50%" width="40%" style="top:282px" class="object rack-background"/>
+        <h3 style="top:360px; left:90px" class="object green-heading">DAIRY PRODUCTS</h3>
+        <p style="top:400px; left:90px" class="object green-content" id="demo_dairy"></p>
+    </div>
+    <button class="btn1 object" style="top:500px;margin-left: 30px;right:50px;"><a href="GroceryShopping-3.html" style="text-decoration: none;">Next</a></button>
+    </div>
+</body>
+</html>

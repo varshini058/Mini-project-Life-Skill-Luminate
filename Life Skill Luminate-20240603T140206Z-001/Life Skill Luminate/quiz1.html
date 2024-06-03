@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/android-chrome-512x512.png">
+    <title>LifeSkillLuminate | Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar-quiz">
+            <ul>
+                <li id="apple"  style="opacity: 0.5;"><img src="images/apple-basket.jpg"/>Apples</li>
+                <li id="banana"  style="opacity: 0.5;"><img src="images/banana-basket.jpg"/>Banana</li>
+                <li id="sausages"   style="opacity: 0.5;"><img src="images/sausages.jpg" /> Sausages</li>
+                <li id="bread"><img src="images/breadbasket.jpg"/> Bread</li>
+                <li id="milk"><img src="images/Milkcarton.jpg"/> Milk</li>
+            </ul>
+        </div>
+        <div class="main-content" >
+            <div class="card-container">
+                <img src="images/bakeryitem.jpg" height="30%" width="50%" usemap="#map3"/>
+                <map name="map3">
+                    <area id="area4" shape="circle" coords="90,140,20" href="#" onclick="change('bread')">
+                </map>
+                <img src="images/rack-dairy.png" height="30%" width="40%" usemap="#map4"/>
+                <map name="map4">
+                    <area id="area5" shape="circle" coords="230,90,40" href="#" onclick="checkCompletion('milk')">
+                </map>
+            </div>
+        </div>
+    </div>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <p>Module Completed!</p>
+          <button onclick="redirectToSkills()">OK</button>
+        </div>
+      </div>
+    </body>
+    </html>
